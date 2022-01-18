@@ -21,7 +21,7 @@ body {
 
 .calculator-grid > button {
 cursor: pointer;
-font-size: 2rem;
+font-size: 2.35rem;
 border: 1px solid whitesmoke;
 outline: none;
 background-color: rgb(134, 224, 182, .75);
@@ -47,12 +47,12 @@ background-color: rgba(188, 229, 210, 0.9);
     word-break: break-all;
 }
 
-.output .prev-operand {
-    color: rgba(221, 231, 229, 0.85);
+.output .previous-operand {
+    color: rgba(215, 228, 225, 0.85);
     font-size: 1.5rem;
 }
 
 .output .current-operand {
     color: rgba(221, 231, 229, 0.952);
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
