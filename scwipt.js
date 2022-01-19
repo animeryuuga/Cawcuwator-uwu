@@ -16,7 +16,7 @@ class Calculator {
     }
 
     appendNumber(number) {
-        if(number === '.' && this.currentOperand.includes('.')) return
+        if (number === '.' && this.currentOperand.includes('.')) return
         this.currentOperand = this.currentOperand.toString() + number.toString()
     }
 
@@ -63,12 +63,12 @@ class Calculator {
         let integerDisplay
         if (isNaN(integerDigits)) {
             integerDisplay = ''
-        } else{
+        } else {
             integerDisplay = integerDigits.toLocaleString('en', {maximumFractionDigits: 0})
         }
         if (decimalDigits != null) {
             return `${integerDisplay}.${decimalDigits}`
-        } else{
+        } else {
             return integerDisplay
         }
     }
@@ -77,12 +77,12 @@ class Calculator {
         this.currentOperandTextElement.innerText = this.getDisplayNumber(this.currentOperand)
         if (this.operation != null) {
             this.previousOperandTextelement.innerText = 
-            `${this.getDisplayNumber(this.currentOperand)} ${this.operation}`
+            `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
         } else {
             this.previousOperandTextelement.innerText = ''
         }
     }
-}
+} 
 
 const numberButtons = document.querySelectorAll('[data-number]')
 const operationButtons = document.querySelectorAll('[data-operation]')
